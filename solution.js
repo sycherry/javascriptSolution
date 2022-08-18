@@ -23,8 +23,6 @@ function solution(scores) {
       container["total scores"] = item.map(obj => obj.score).reduce((a, b) => a + b)
 
       // Minimum score of a continuous phoneme sequence of length N
-      // TODO: confirm with Thuy - question text suggests we take the minimum score of 
-      // the max sequence, the name suggests otherwise
       container["max sequence score"] = Math.min(...item.map(obj => obj.score))
 
       // Consecutive phoneme sequences
